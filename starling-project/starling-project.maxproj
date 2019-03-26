@@ -2,13 +2,20 @@
 	"name" : "starling-project",
 	"version" : 1,
 	"creationdate" : 3636513109,
-	"modificationdate" : 3636513138,
+	"modificationdate" : 3636513563,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
+		"patchers" : 		{
+			"m4l-starling-main.maxpat" : 			{
+				"kind" : "patcher",
+				"toplevel" : 1
+			}
+
+		}
 
 	}
 ,
