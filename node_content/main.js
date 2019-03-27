@@ -1,30 +1,44 @@
+// @ts-ignore
 const maxAPI = require('max-api');
 const app = require('./app')(maxAPI);
+const { exportPreset } = require('./utils');
+const { CLEAR } = require('./constants/actions');
 
-maxAPI.addHandler('open-browser', () => {
+maxAPI.getDict('store').then(prevStoreState => {
+  app.initStore(prevStoreState);
+  maxAPI.addHandler('open-browser', onOpenBrowser);
+  maxAPI.addHandler('close-browser', onCloseBrowser);
+  maxAPI.addHandler('getState', onGetState);
+  maxAPI.addHandler('clearState', onClearState);
+  maxAPI.addHandler('dispatch', onDispatch);
+  maxAPI.addHandler('exportPreset', onExportPreset);
+});
+
+function onOpenBrowser() {
   app.openBrowser();
-});
-
-maxAPI.addHandler('close-browser', () => {
-  app.closeBrowser();
-});
-
-maxAPI.addHandler('getState', onGetState);
-
-maxAPI.addHandler('clearState', onClearState);
-
-
-/**
- * @TODO get redux state.
- */
-function onGetState() {
-  const state = { hoge: 3445 };
-  maxAPI.outlet(state)
 }
 
-/**
- * @TODO clear redux state.
- */
+function onCloseBrowser() {
+  app.closeBrowser();
+}
+
+function onGetState() {
+  maxAPI.outlet(app.store.getState());
+}
+
 function onClearState() {
-  maxAPI.outlet('clear');
+  app.dispatch(CLEAR);
+}
+
+function onDispatch(...args) {
+  app.dispatch(...args);
+}
+
+function onExportPreset(fileName, outputPath) {
+  const state = app.store.getState();
+  try {
+    exportPreset(fileName, outputPath, state);
+  } catch (e) {
+    maxAPI.post(e);
+  }
 }
