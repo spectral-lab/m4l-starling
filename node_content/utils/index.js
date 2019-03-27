@@ -22,14 +22,15 @@ const exportPreset = (fileName, _rawPath, state) => {
   });
 };
 
-async function importPreset(qrImg) {
-  const img = await jimp.read(fs.readFileSync(qrImg));
+async function importPreset(_rawPath) {
+  const qrImgPath = _rawPath.replace(/[\w\s:]*/, '');
+  const img = await jimp.read(fs.readFileSync(qrImgPath));
   const qr = new QRReader();
   const value = await new Promise((resolve, reject) => {
     qr.callback = (err, v) => err != null ? reject(err) : resolve(v);
     qr.decode(img.bitmap);
   });
-  return value.result;
+  return JSON.parse(value.result);
 }
 
 module.exports = {
