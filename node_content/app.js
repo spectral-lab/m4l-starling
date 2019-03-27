@@ -1,9 +1,15 @@
 const io = require("socket.io");
+const { createStore } = require('redux');
+const reducers = require('./reducers');
 const portscanner = require('portscanner');
 const { openBrowser } = require('./utils');
 
 class App {
   constructor(maxAPI) {
+    /**
+     * Max API is only required in runtime, thus this needs to be DI-ed to the application.
+     * @property {function} outlet
+     */
     this.maxAPI = maxAPI;
     this.initialize();
   }
@@ -16,16 +22,22 @@ class App {
       socket.emit("welcome", "welcome man");
     });
 
-    this.port = port;
+    const store = createStore(reducers);
+    /**
+     * @TODO test this
+     */
+    store.subscribe(() => {
+      this.maxAPI.outlet(store.getState());
+    });
+
+    this.store = store;
     this.server = server;
-  }
-
-  openBrowser() {
-    openBrowser(this.port);
-  }
-
-  closeBrowser() {
-    this.server.emit('broadcast', 'CLOSE');
+    this.openBrowser = () => {
+      openBrowser(port);
+    } 
+    this.closeBrowser = () => {
+      server.emit('broadcast', 'CLOSE');
+    };
   }
 
 }

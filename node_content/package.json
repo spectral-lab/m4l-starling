@@ -19,6 +19,7 @@
   "dependencies": {
     "open": "^6.0.0",
     "portscanner": "^2.2.0",
+    "redux": "^4.0.1",
     "socket.io": "^2.2.0"
   }
 }
