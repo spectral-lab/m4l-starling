@@ -1,0 +1,8 @@
+@startuml
+max -> loadbang: initialize
+loadbang -> dict: retrieve last saved state
+dict -> dict: dict.serialize
+dict -> node.script:  state
+
+
+@enduml
