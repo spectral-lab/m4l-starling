@@ -3,6 +3,7 @@ const { createStore } = require('redux');
 const reducers = require('./reducers');
 const portscanner = require('portscanner');
 const { openBrowser } = require('./utils');
+const { updatePWT } = require('./constants/actions');
 
 class App {
   constructor(maxAPI) {
@@ -18,9 +19,9 @@ class App {
     console.log('prev store state');
     const port = await portscanner.findAPortNotInUse(3000, 9000).catch(console.error);
     const server = io.listen(port);
-    server.on("connection", function(socket) {
+    server.on("connection", socket => {
       console.log("user connected");
-      socket.emit("welcome", "welcome man");
+      socket.on("pwt", this.onReceivePwt.bind(this));
     });
 
     this.server = server;
@@ -41,15 +42,10 @@ class App {
     this.store = store;
   }
 
-  dispatch(...args) {
-    const [type] = args;
-    const payload = args.slice(1);
-    const action = {
-      type,
-      payload
-    };
-    console.log(action);
-    this.store.dispatch(action);
+  onReceivePwt(pwt) {
+    console.log('received pwt');
+    if (!this.store) return;
+    this.store.dispatch(updatePWT(pwt));
   }
 
 }

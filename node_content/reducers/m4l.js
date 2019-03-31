@@ -5,7 +5,6 @@ const initialState = {};
 function M4L(state = initialState, action) {
   switch (action.type) {
     case UPDATE_M4L: {
-      console.log('updating m4l');
       const { payload } = action;
       const [key, value] = payload;
       return Object.assign({}, state, {

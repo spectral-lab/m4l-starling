@@ -50,10 +50,10 @@
 					"presentation_rect" : [ 242.099990844726562, 108.599999368190765, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[5]",
-							"parameter_shortname" : "live.dial"
+							"parameter_longname" : "live.dial[5]"
 						}
 
 					}
@@ -75,10 +75,10 @@
 					"presentation_rect" : [ 162.099990844726562, 108.599999368190765, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[4]",
-							"parameter_shortname" : "live.dial"
+							"parameter_longname" : "live.dial[4]"
 						}
 
 					}
@@ -125,11 +125,11 @@
 					"presentation_rect" : [ 162.099990844726562, 47.799999237060547, 126.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[2]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -367,11 +367,11 @@
 					"presentation_rect" : [ 295.100006103515625, 52.099998474121094, 126.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[1]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -562,7 +562,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "n4m.monitor.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 191.099997818470001, 462.799998939037323, 400.0, 220.0 ],
@@ -627,7 +627,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 714.5999755859375, 280.79998779296875, 169.0, 35.0 ],
-					"text" : "dispatch UPDATE_M4L grain-size 48"
+					"text" : "dispatch UPDATE_M4L frequency 0."
 				}
 
 			}
@@ -654,10 +654,10 @@
 					"patching_rect" : [ 374.099997818470001, 406.599999368190765, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[3]",
-							"parameter_shortname" : "live.dial"
+							"parameter_longname" : "live.dial[3]"
 						}
 
 					}
@@ -677,10 +677,10 @@
 					"patching_rect" : [ 206.099997818470001, 399.799998939037323, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[2]",
-							"parameter_shortname" : "live.dial"
+							"parameter_longname" : "live.dial[2]"
 						}
 
 					}
@@ -954,11 +954,11 @@
 					"presentation_rect" : [ 29.099998474121094, 52.099998474121094, 126.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -994,13 +994,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-1", 1 ]
 				}
 
 			}
@@ -1220,14 +1213,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22" : [ "live.dial[5]", "live.dial", 0 ],
-			"obj-17" : [ "dict", "dict", 0 ],
-			"obj-5" : [ "live.text[2]", "live.text", 0 ],
-			"obj-20" : [ "live.dial[3]", "live.dial", 0 ],
-			"obj-39" : [ "live.text[1]", "live.text", 0 ],
-			"obj-18" : [ "live.text", "live.text", 0 ],
 			"obj-14" : [ "live.dial[4]", "live.dial", 0 ],
+			"obj-20" : [ "live.dial[3]", "live.dial", 0 ],
+			"obj-22" : [ "live.dial[5]", "live.dial", 0 ],
+			"obj-18" : [ "live.text", "live.text", 0 ],
+			"obj-5" : [ "live.text[2]", "live.text", 0 ],
+			"obj-17" : [ "dict", "dict", 0 ],
 			"obj-19" : [ "live.dial[2]", "live.dial", 0 ],
+			"obj-39" : [ "live.text[1]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1238,27 +1231,6 @@
 				"name" : "main.js",
 				"bootpath" : "~/Desktop/m4l-starling/node_content",
 				"patcherrelativepath" : "../node_content",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "~/Documents/Max 8/Max for Live Devices/ikuze Project/discarded/discarded_2019-03-28_05-05-52",
-				"patcherrelativepath" : "../../../Documents/Max 8/Max for Live Devices/ikuze Project/discarded/discarded_2019-03-28_05-05-52",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "~/Documents/Max 8/Max for Live Devices/ikuze Project/code",
-				"patcherrelativepath" : "../../../Documents/Max 8/Max for Live Devices/ikuze Project/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "~/Documents/Max 8/Max for Live Devices/ikuze Project/code",
-				"patcherrelativepath" : "../../../Documents/Max 8/Max for Live Devices/ikuze Project/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

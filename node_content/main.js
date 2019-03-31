@@ -2,7 +2,7 @@
 const maxAPI = require('max-api');
 const app = require('./app')(maxAPI);
 const { exportPreset, importPreset } = require('./utils');
-const { CLEAR } = require('./constants/actions');
+const { clearState, updateM4L } = require('./constants/actions');
 
 maxAPI.getDict('store').then(prevStoreState => {
   app.initStore(prevStoreState);
@@ -28,11 +28,11 @@ function onGetState() {
 }
 
 function onClearState() {
-  app.dispatch(CLEAR);
+  app.store.dispatch(clearState());
 }
 
 function onDispatch(...args) {
-  app.dispatch(...args);
+  app.store.dispatch(updateM4L(args.slice(1)));
 }
 
 function onExportPreset(fileName, outputPath) {
