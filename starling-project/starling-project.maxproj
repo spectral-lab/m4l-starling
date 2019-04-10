@@ -2,7 +2,7 @@
 	"name" : "starling-project",
 	"version" : 1,
 	"creationdate" : 3636513109,
-	"modificationdate" : 3636513563,
+	"modificationdate" : 3637770039,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"m4l-starling-main.maxpat" : 			{
+			"main.maxpat" : 			{
 				"kind" : "patcher",
 				"toplevel" : 1
 			}
@@ -25,7 +25,7 @@
 ,
 	"searchpath" : 	{
 		"0" : 		{
-			"bootpath" : "~/Desktop/m4l-starling",
+			"bootpath" : "~/Documents/starling/m4l-starling",
 			"projectrelativepath" : "..",
 			"label" : "",
 			"recursive" : 1,
