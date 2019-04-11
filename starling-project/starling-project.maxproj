@@ -2,7 +2,7 @@
 	"name" : "starling-project",
 	"version" : 1,
 	"creationdate" : 3636513109,
-	"modificationdate" : 3637770039,
+	"modificationdate" : 3637834330,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,8 +12,22 @@
 		"patchers" : 		{
 			"main.maxpat" : 			{
 				"kind" : "patcher",
-				"toplevel" : 1
+				"local" : 1
 			}
+,
+			"tester.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/repos/starling/m4l-starling/patchers/tester",
+					"projectrelativepath" : "../patchers/tester"
+				}
+
+			}
+
+		}
+,
+		"code" : 		{
 
 		}
 
@@ -25,17 +39,17 @@
 ,
 	"searchpath" : 	{
 		"0" : 		{
-			"bootpath" : "~/Documents/starling/m4l-starling",
+			"bootpath" : "~/repos/starling/m4l-starling",
 			"projectrelativepath" : "..",
 			"label" : "",
 			"recursive" : 1,
 			"enabled" : 1,
-			"includeincollective" : 1
+			"includeincollective" : 0
 		}
 
 	}
 ,
-	"detailsvisible" : 0,
+	"detailsvisible" : 1,
 	"amxdtype" : 1633771873,
 	"readonly" : 0,
 	"devpathtype" : 0,
