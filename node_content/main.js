@@ -4,7 +4,7 @@ const app = require('./app')(maxAPI);
 const { exportPreset, importPreset } = require('./utils');
 const { clearState, updateM4L } = require('./constants/actions');
 
-maxAPI.getDict('store').then(prevStoreState => {
+maxAPI.getDict('---store').then(prevStoreState => {
   app.initStore(prevStoreState);
   maxAPI.addHandler('open-browser', onOpenBrowser);
   maxAPI.addHandler('close-browser', onCloseBrowser);
