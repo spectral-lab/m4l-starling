@@ -6,7 +6,7 @@ var buf_starling_a = new Buffer(jsarguments[3]);
 
 var dict_starling = new Dict(jsarguments[4]);
 var samplerate = 48000;
-var interval = samplerate / 96; // 96 per escond
+var interval = samplerate / 41; // 96 per escond
 
 // wavetable sample number
 var len = 1024;
@@ -37,8 +37,8 @@ function bang(){
 
 function convert(){
 
-    var pitch = dict_starling.get("PWT::pitch");
-    var amp = dict_starling.get("PWT::amp");
+    var pitch = dict_starling.get("pwt::pitch");
+    var amp = dict_starling.get("pwt::amp");
     
     // set buffer size
     var chNum = pitch.getkeys().length;    

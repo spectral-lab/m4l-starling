@@ -45,6 +45,7 @@ class App {
   onReceivePwt(pwt) {
     console.log('received pwt');
     if (!this.store) return;
+    this.maxAPI.outlet(['preset', this.store.getState()]);
     this.store.dispatch(updatePWT(pwt));
   }
 
