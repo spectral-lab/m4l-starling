@@ -35,7 +35,7 @@ class App {
 
   initStore(initialDictState) {
     const store = createStore(reducers, initialDictState);
-    this.maxAPI.outlet(store.getState());
+    this.maxAPI.outlet(['preset', store.getState()]);
     store.subscribe(() => {
       this.maxAPI.outlet(store.getState());
     });

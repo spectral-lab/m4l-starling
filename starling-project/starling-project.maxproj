@@ -2,7 +2,7 @@
 	"name" : "starling-project",
 	"version" : 1,
 	"creationdate" : 3636513109,
-	"modificationdate" : 3637770039,
+	"modificationdate" : 3637778348,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,10 +10,15 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"main.maxpat" : 			{
+			"legacy.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1,
 				"toplevel" : 1
 			}
+
+		}
+,
+		"code" : 		{
 
 		}
 
