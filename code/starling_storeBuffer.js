@@ -37,26 +37,32 @@ function bang(){
 
 function convert(){
 
-    var pitch = dict_starling.get("PWT::pitch");
-    var amp = dict_starling.get("PWT::amp");
+    var pitch = dict_starling.get("pwt::pitch");
+    var magnitude = dict_starling.get("pwt::magnitude");
+    var duration_ms = dict_starling.get("pwt::duration");
     
     // set buffer size
     var chNum = pitch.getkeys().length;    
     var starlingLen = pitch.get("0").length
     buf_starling_p.send("sizeinsamps", starlingLen);
     buf_starling_a.send("sizeinsamps", starlingLen);
+    var interval_ms = duration_ms/starlingLen; //ms Per interval
     
     // output sampleSize
-    outlet(0, starlingLen*interval, interval, chNum);
+    outlet(0, duration_ms, interval_ms, chNum);
 
     for(var i=0; i<15; i++){
         for(var j=0; j<starlingLen; j++){
             var pitchVal = Number(pitch.get(i)[j]);
-            var ampVal = Math.pow(Number(amp.get(i)[j]), 0.2);
+            var magnitudeVal = Math.pow(Number(magnitude.get(i)[j]), 0.2);
             buf_starling_p.poke(i+1, j, pitchVal);
-            buf_starling_a.poke(i+1, j, ampVal);
+            buf_starling_a.poke(i+1, j, magnitudeVal);
         }
     }
+}
+
+function set_samplerate(val){
+    samplerate = val;
 }
 
 function wrap(x, l, u){

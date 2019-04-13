@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 184.0, -1659.0, 1605.0, 1566.0 ],
+		"rect" : [ 536.0, -1243.0, 1473.0, 1001.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1232.533231608073038, 290.78875732421875, 48.0, 22.0 ],
+					"text" : "convert"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"id" : "obj-233",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 891.816558329264353, 597.099951803684235, 98.0, 22.0 ],
+					"patching_rect" : [ 891.816558329264353, 675.099951803684235, 98.0, 22.0 ],
 					"text" : "s ---exportPreset"
 				}
 
@@ -56,7 +68,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 779.816558329264353, 597.099951803684235, 98.0, 22.0 ],
+					"patching_rect" : [ 779.816558329264353, 675.099951803684235, 98.0, 22.0 ],
 					"text" : "s ---importPreset"
 				}
 
@@ -68,7 +80,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.983237711588572, 597.099951803684235, 65.0, 22.0 ],
+					"patching_rect" : [ 675.983237711588572, 675.099951803684235, 65.0, 22.0 ],
 					"text" : "s ---editing"
 				}
 
@@ -82,15 +94,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 779.816558329264353, 560.199951171875, 94.400054931640625, 24.0 ],
+					"patching_rect" : [ 779.816558329264353, 638.199951171875, 94.400054931640625, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[2]",
 							"parameter_invisible" : 2,
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -110,15 +122,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 891.816558329264353, 560.199951171875, 94.400054931640625, 24.0 ],
+					"patching_rect" : [ 891.816558329264353, 638.199951171875, 94.400054931640625, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[1]",
 							"parameter_invisible" : 2,
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -137,17 +149,17 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 675.983237711588572, 560.199951171875, 94.400054931640625, 24.0 ],
+					"patching_rect" : [ 675.983237711588572, 638.199951171875, 94.400054931640625, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.033224487304778, 113.0, 69.900054931640625, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
 							"parameter_invisible" : 2,
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -247,7 +259,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.266647338867188, 607.0, 30.0, 30.0 ]
+					"patching_rect" : [ 514.266647338867188, 685.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -259,7 +271,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 376.13330078125, 607.0, 30.0, 30.0 ]
+					"patching_rect" : [ 376.13330078125, 685.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -270,7 +282,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1140.533231608073038, 109.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1232.533231608073038, 182.288818359375, 67.0, 22.0 ],
 					"text" : "sel convert"
 				}
 
@@ -283,7 +295,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 666.0, 338.0, 30.0, 30.0 ]
+					"patching_rect" : [ 654.0, 338.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -296,7 +308,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.33331298828125, 23.333343505859375, 30.0, 30.0 ]
+					"patching_rect" : [ 600.33331298828125, 22.333343505859375, 30.0, 30.0 ]
 				}
 
 			}
@@ -308,7 +320,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1092.083251953125, 290.78875732421875, 46.0, 20.0 ],
+					"patching_rect" : [ 1161.083251953125, 290.78875732421875, 46.0, 20.0 ],
 					"text" : "scale $1"
 				}
 
@@ -321,7 +333,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 952.333251953125, 290.78875732421875, 54.0, 20.0 ],
+					"patching_rect" : [ 998.333251953125, 290.78875732421875, 54.0, 20.0 ],
 					"text" : "spread $1"
 				}
 
@@ -334,7 +346,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 793.883231608072947, 290.78875732421875, 53.0, 20.0 ],
+					"patching_rect" : [ 809.883231608072947, 290.78875732421875, 53.0, 20.0 ],
 					"text" : "mGain $1"
 				}
 
@@ -347,7 +359,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.83331298828125, 290.78875732421875, 55.0, 20.0 ],
+					"patching_rect" : [ 653.83331298828125, 290.78875732421875, 55.0, 20.0 ],
 					"text" : "dryWet $1"
 				}
 
@@ -360,7 +372,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1005.705786132812591, 212.288818359375, 46.0, 20.0 ],
+					"patching_rect" : [ 1074.705786132812591, 212.288818359375, 46.0, 20.0 ],
 					"text" : "scale $1"
 				}
 
@@ -373,7 +385,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1005.705786132812591, 182.288818359375, 87.0, 20.0 ],
+					"patching_rect" : [ 1074.705786132812591, 182.288818359375, 87.0, 20.0 ],
 					"text" : "scale 0. 100. 0. 1."
 				}
 
@@ -387,19 +399,19 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1005.483251953125091, 109.0, 50.0, 63.0 ],
+					"patching_rect" : [ 1074.483251953125091, 96.0, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.983251953125091, 36.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "scale",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "scale[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "scale"
+							"parameter_initial" : [ 50 ]
 						}
 
 					}
@@ -426,7 +438,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 600.33331298828125, 67.0, 559.199918619791788, 22.0 ],
+					"patching_rect" : [ 600.33331298828125, 60.0, 651.199918619791788, 22.0 ],
 					"text" : "route dryWet vol spread scale"
 				}
 
@@ -439,19 +451,19 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 870.433272298177144, 109.0, 41.0, 48.0 ],
+					"patching_rect" : [ 916.433272298177144, 103.5, 41.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.33331298828125, 4.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "spread",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "spread[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "spread"
+							"parameter_initial" : [ 50 ]
 						}
 
 					}
@@ -468,11 +480,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 735.383292643229197, 109.0, 41.0, 48.0 ],
+					"patching_rect" : [ 758.383292643229197, 103.5, 41.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.33331298828125, 113.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "vol",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
@@ -481,8 +494,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "vol"
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -499,11 +511,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 600.33331298828125, 109.0, 41.0, 48.0 ],
+					"patching_rect" : [ 600.33331298828125, 103.5, 41.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.33331298828125, 57.5, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "d/w",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5,
 							"parameter_linknames" : 1,
@@ -511,8 +524,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 100.0,
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "d/w"
+							"parameter_initial" : [ 50 ]
 						}
 
 					}
@@ -554,7 +566,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 536.33331298828125, 562.199951171875, 91.0, 20.0 ],
+					"patching_rect" : [ 536.33331298828125, 640.199951171875, 91.0, 20.0 ],
 					"text" : "Particle Cluster"
 				}
 
@@ -580,7 +592,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.433272298177144, 182.288818359375, 85.0, 20.0 ],
+					"patching_rect" : [ 916.433272298177144, 182.288818359375, 85.0, 20.0 ],
 					"text" : "scale 0 100 0 0.4"
 				}
 
@@ -593,7 +605,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.433272298177144, 212.288818359375, 54.0, 20.0 ],
+					"patching_rect" : [ 916.433272298177144, 212.288818359375, 54.0, 20.0 ],
 					"text" : "spread $1"
 				}
 
@@ -611,6 +623,7 @@
 					"patching_rect" : [ 24.690155029296875, 263.2718505859375, 47.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "interval",
 							"parameter_enum" : [ "3", "1.5", "0.5", "0.4", "0.3", "0.2", "0.1" ],
 							"parameter_type" : 2,
 							"parameter_linknames" : 1,
@@ -618,8 +631,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 6,
-							"parameter_initial" : [ 5 ],
-							"parameter_shortname" : "interval"
+							"parameter_initial" : [ 5 ]
 						}
 
 					}
@@ -649,7 +661,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.383292643229197, 212.288818359375, 53.0, 20.0 ],
+					"patching_rect" : [ 758.383292643229197, 212.288818359375, 53.0, 20.0 ],
 					"text" : "mGain $1"
 				}
 
@@ -662,7 +674,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.383292643229197, 182.288818359375, 35.0, 20.0 ],
+					"patching_rect" : [ 758.383292643229197, 182.288818359375, 35.0, 20.0 ],
 					"text" : "dbtoa"
 				}
 
@@ -739,7 +751,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1051.0, -1601.0, 1424.0, 1545.0 ],
+						"rect" : [ 75.0, 79.0, 1369.0, 1087.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -784,7 +796,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 832.4000244140625, 1306.800022125244141, 35.0, 22.0 ],
+									"patching_rect" : [ 832.4000244140625, 1313.5999755859375, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -814,7 +826,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "//2-pole biquad high pass filter\nhighpass_12(sig, cf, Q){\n\nHistory h1(0);\nHistory h2(0);\nHistory h3(0);\nHistory h4(0);\n\nomega = cf * twopi/samplerate;\nsn = sin(omega);\ncs = cos(omega);\nalpha = sn * 0.5/Q;\n\nb0 = 1./(1. + alpha);\na2 = ((1. + cs) * 0.5) * b0;\na0 = a2;\na1 = -(1. + cs) * b0;\nb1 = (-2. * cs) * b0;\nb2 = (1. - alpha) * b0;\n\noutput = (((sig*a0 + h3*a1)) + h2*a2) - ((h4*b1 + h1*b2));\n\nh1 = fixdenorm(h4);\nh2 = fixdenorm(h3);\nh3 = fixdenorm(sig);\nh4 = fixdenorm(output);\n\nreturn output;\n}\r\n\r\ncomp(sig, atk, dec, thresh, r, diffBuf){\n\n\tHistory hisSig(0);\n\t\n\tinput = abs(sig);\n\tdelIn = delta(input);\n\t\n\trampAmtUp = maximum(latch(mstosamps(atk), delIn), 1);\n\trampAmtDw = maximum(latch(mstosamps(dec), delIn), 1);\n\t\n\toverLimitUp = plusequals(1, delIn) < rampAmtUp;\n\toverLimitDw = plusequals(1, delIn) < rampAmtDw;\n\t\n\t\n\tif(delIn>0){\n\t\tpoke(diffBuf, latch(input-hisSig, delIn)/rampAmtUp, 0, 0);\n\t\tpoke(diffBuf, 0, 0, 1);\n\t}\n\telse if(delIn<0){\n\t\tpoke(diffBuf, latch(input-hisSig, delIn)/rampAmtDw, 0, 0);\n\t\tpoke(diffBuf, 1, 0, 1);\n\t}\n\t\n\tsum = mix(overLimitUp, overLimitDw, peek(diffBuf, 0, 1))*peek(diffBuf, 0, 0) + hisSig;\n\thisSig = sum;\n\t\n\treturn sig*clip(((sum-thresh)*(1/r)+thresh)/sum, 0, 1);\n}\r\n\r\n//============================================================================================\r\n\r\nParam interval(100);\r\nParam mGain(1);\r\nParam dryWet(0.5);\r\nParam poly(256);\r\nParam spread(0);\r\nParam delayLen(0.05);\r\nParam offset(0);\r\nParam exp(0);\r\nParam maxRange(0);\r\nParam sampleSize(0);\r\nParam dictSize(0);\r\nParam note(0);\r\nParam scale(0);\r\n\r\nParam range(1);\r\nParam clusterNum(8);\r\n\r\nData buf_cout(1024, 1);\r\nData buf_len(1024, 1);\r\nData buf_delay(1024, 1);\r\nData buf_pitch(1024, 1);\r\nData buf_ch(1024, 1);\r\nData buf_spread(1024, 2);\r\nData buf_mof(1024, 1);\r\nData buf_comp(1, 2);\r\nData buf_amp(1024, 1);\r\n\r\nBuffer buf_win(\"window_buf\");\r\nBuffer buf_starlingP(\"buf_starling_pitch\");\r\nBuffer buf_starlingA(\"buf_starling_amp\");\r\n\r\nHistory masterGain(0);\r\nHistory masterDryWet(0.5);\r\nHistory checkReset(0);\r\nHistory his_thisIndex(0);\r\nHistory his_slew;\r\n\r\nDelay delaySig(samplerate*5);\r\n\r\ninput = (in1 + in2);\r\n\r\n// set gains with ramps\r\nmasterGain = (mGain - masterGain)*0.001 + masterGain;\r\nmasterDryWet = (dryWet - masterDryWet)*0.001 + masterDryWet;\r\n\r\n// total setting\r\nwinSize = 1024;\r\n\r\n// set interval\r\nmSamps = mstosamps(interval);\r\nsleepCheck = checkReset < 0.0001;\r\nmCout = counter(1, in3 == 1, 0);\r\n\r\nmChange = (change(mCout%mSamps) == -1);\r\n\r\n// EcoMode when no input/output\r\nif(sleepCheck){\r\n\tfor(i = 0; i < poly; i+= 1){\r\n\t\tpoke(buf_cout, 0, i, 0);\r\n\t}\r\n}\r\n\r\n// particle initialization\r\nif(mChange){\r\n\t\r\n\t// cluster init\r\n\tclusterIndex = wrap(his_thisIndex, 0, clusterNum);\r\n\treadIndex = floor(mCout/dictSize);\r\n\r\n\t// buf_cout 1~mSamps\r\n\tif(peek(buf_cout, his_thisIndex, 0) == 0){\r\n\t\t// sotre current mCout\r\n\t\tpoke(buf_cout, mCout, his_thisIndex, 0);\r\n\t\t// set pitch amount \r\n\t\tsemiPitch = peek(buf_starlingP, readIndex, clusterIndex) - 64;\r\n\t\tif(semiPitch > 0){\r\n\t\t\tsemiPitch = scale(semiPitch, 0, 64, 0, 64*scale);\r\n\t\t}\r\n\t\telse{\r\n\t\t\tsemiPitch = scale(semiPitch, -64, 0, -64*scale, 0);\r\n\t\t}\r\n\t\tclusterPitch = pow(2, semiPitch/12) - 1;\r\n\t\tpoke(buf_pitch, clusterPitch, his_thisIndex, 0);\r\n\t\t// set amp\r\n\t\tpoke(buf_amp, peek(buf_starlingA, readIndex, clusterIndex), his_thisIndex, 0);\r\n\t\t// set random length\r\n\t\tlenMin = clip(scale(semiPitch, 0, 24, 0.09, 0.05), 0.1, 0.05);\r\n\t\tpoke(buf_len,  samplerate*lenMin, his_thisIndex, 0);\r\n\t\t// set delay\r\n\t\tdelayMin = maximum(0.24*semiPitch/24, 0);\r\n\t\tpoke(buf_delay, (samplerate/2)*(delayMin+delayLen*abs(noise())), his_thisIndex, 0);\r\n\t\t// set windowFunc wavetable\r\n\t\tpoke(buf_mof, ceil(clip(scale(clusterPitch, -24, 24, 127, 0), 0, 127)), his_thisIndex, 0);\r\n\t\t// set channel and spread\r\n\t\tspNoise = noise()*spread;\r\n\t\tpoke(buf_spread, 0.5 + spNoise, his_thisIndex, 0);\r\n\t\tpoke(buf_spread, 0.5 - spNoise, his_thisIndex, 1);\r\n\t\t\r\n\t\this_thisIndex = wrap(his_thisIndex + 1 , 0, poly);\r\n\t}\r\n}\r\n\r\n// dsp section\r\noutput_1 = 0;\r\noutput_2 = 0;\r\nfor(i = 0; i < poly; i += 1){\r\n\tif(peek(buf_cout, i, 0) != 0){\r\n\t\t\r\n\t\tpCout = mCout - peek(buf_cout, i, 0);\r\n\t\tphase = winSize*pCout/peek(buf_len, i, 0);\r\n\r\n\t\tif(phase >= winSize){\r\n\t\t\tpoke(buf_cout, 0, i, 0);\r\n\t\t\tcontinue;\r\n\t\t}\r\n\t\t\r\n\t\tpitchVal = peek(buf_pitch, i, 0);\r\n\t\tdelayIndex = peek(buf_delay, i, 0)-pCout*pitchVal;\r\n\t\tif(delayIndex < 0){\r\n\t\t\tdelayIndex = (-2-pitchVal)*delayIndex/pitchVal;\r\n\t\t}\r\n\t\t\r\n\t\t// select input LorR and spread section\r\n\t\tamp = peek(buf_amp, i, 0);\r\n\t\toutput = delaySig.read(delayIndex)*peek(buf_win, phase, peek(buf_mof, i, 0))*amp;\r\n\t\toutput_1 += peek(buf_spread, i, 0)*output;\r\n\t\toutput_2 += peek(buf_spread, i, 1)*output;\r\n\t}\r\n}\r\n\r\noutputSum = output_1 + output_2;\r\nresetJudge = (outputSum + input) > 0.0001;\r\ncheckReset = resetJudge ? 1 : checkReset * (resetJudge ? 1 : 0.99995);\r\n\r\ndelaySig.write(in1 + in2);\r\n\r\n//atn = pow(interval/10, 0.475)/3;\r\nout1 = mix(in1, output_1/5, masterDryWet)*masterGain;\r\nout2 = mix(in2, output_2/5, masterDryWet)*masterGain;",
+									"code" : "//2-pole biquad high pass filter\nhighpass_12(sig, cf, Q){\n\nHistory h1(0);\nHistory h2(0);\nHistory h3(0);\nHistory h4(0);\n\nomega = cf * twopi/samplerate;\nsn = sin(omega);\ncs = cos(omega);\nalpha = sn * 0.5/Q;\n\nb0 = 1./(1. + alpha);\na2 = ((1. + cs) * 0.5) * b0;\na0 = a2;\na1 = -(1. + cs) * b0;\nb1 = (-2. * cs) * b0;\nb2 = (1. - alpha) * b0;\n\noutput = (((sig*a0 + h3*a1)) + h2*a2) - ((h4*b1 + h1*b2));\n\nh1 = fixdenorm(h4);\nh2 = fixdenorm(h3);\nh3 = fixdenorm(sig);\nh4 = fixdenorm(output);\n\nreturn output;\n}\r\n\r\ncomp(sig, atk, dec, thresh, r, diffBuf){\n\n\tHistory hisSig(0);\n\t\n\tinput = abs(sig);\n\tdelIn = delta(input);\n\t\n\trampAmtUp = maximum(latch(mstosamps(atk), delIn), 1);\n\trampAmtDw = maximum(latch(mstosamps(dec), delIn), 1);\n\t\n\toverLimitUp = plusequals(1, delIn) < rampAmtUp;\n\toverLimitDw = plusequals(1, delIn) < rampAmtDw;\n\t\n\t\n\tif(delIn>0){\n\t\tpoke(diffBuf, latch(input-hisSig, delIn)/rampAmtUp, 0, 0);\n\t\tpoke(diffBuf, 0, 0, 1);\n\t}\n\telse if(delIn<0){\n\t\tpoke(diffBuf, latch(input-hisSig, delIn)/rampAmtDw, 0, 0);\n\t\tpoke(diffBuf, 1, 0, 1);\n\t}\n\t\n\tsum = mix(overLimitUp, overLimitDw, peek(diffBuf, 0, 1))*peek(diffBuf, 0, 0) + hisSig;\n\thisSig = sum;\n\t\n\treturn sig*clip(((sum-thresh)*(1/r)+thresh)/sum, 0, 1);\n}\r\n\r\n//============================================================================================\r\n\r\nParam interval(0);\r\nParam mGain(1);\r\nParam dryWet(0.5);\r\nParam poly(256);\r\nParam spread(0);\r\nParam delayLen(0.05);\r\nParam offset(0);\r\nParam exp(0);\r\nParam maxRange(0);\r\nParam note(0);\r\nParam scale(0);\r\nParam duration_ms(0);\r\nParam interval_ms(0);\r\n\r\nParam range(1);\r\nParam clusterNum(15);\r\n\r\nData buf_cout(1024, 1);\r\nData buf_len(1024, 1);\r\nData buf_delay(1024, 1);\r\nData buf_pitch(1024, 1);\r\nData buf_ch(1024, 1);\r\nData buf_spread(1024, 2);\r\nData buf_mof(1024, 1);\r\nData buf_comp(1, 2);\r\nData buf_amp(1024, 1);\r\n\r\nBuffer buf_win(\"window_buf\");\r\nBuffer buf_starlingP(\"buf_starling_pitch\");\r\nBuffer buf_starlingA(\"buf_starling_amp\");\r\n\r\nHistory masterGain(0);\r\nHistory masterDryWet(0.5);\r\nHistory checkReset(0);\r\nHistory his_thisIndex(0);\r\nHistory his_slew;\r\n\r\nDelay delaySig(samplerate*5);\r\n\r\ninput = (in1 + in2);\r\n\r\n// set gains with ramps\r\nmasterGain = (mGain - masterGain)*0.001 + masterGain;\r\nmasterDryWet = (dryWet - masterDryWet)*0.001 + masterDryWet;\r\n\r\n// total setting\r\nwinSize = 1024;\r\n\r\n// set interval\r\nmSamps = mstosamps(interval);\r\nsleepCheck = checkReset < 0.0001;\r\nmCout = counter(1, in3 == 1 || sleepCheck == 1, 0);\r\n\r\nif(change(mCout == 0) == 1){\r\n\tfor(i = 0; i < poly; i += 1){\r\n\t\tpoke(buf_cout, 0, i, 0);\r\n\t}\r\n}\r\n\r\nmChange = (change(mCout%mSamps) == -1);\r\n\r\n// EcoMode when no input/output\r\nif(sleepCheck){\r\n\tfor(i = 0; i < poly; i+= 1){\r\n\t\tpoke(buf_cout, 0, i, 0);\r\n\t}\r\n}\r\n\r\n// particle initialization\r\nif(mChange){\r\n\t\r\n\t// cluster init\r\n\tclusterIndex = wrap(his_thisIndex, 0, clusterNum);\r\n\treadIndex = floor(mCout/mstosamps(interval_ms));\r\n\r\n\t// buf_cout 1~mSamps\r\n\tif(peek(buf_cout, his_thisIndex, 0) == 0){\r\n\t\t// sotre current mCout\r\n\t\tpoke(buf_cout, mCout, his_thisIndex, 0);\r\n\t\t// set pitch amount \r\n\t\tsemiPitch = peek(buf_starlingP, readIndex, clusterIndex) - 64;\r\n\t\tif(semiPitch > 0){\r\n\t\t\tsemiPitch = scale(semiPitch, 0, 64, 0, 64*scale);\r\n\t\t}\r\n\t\telse{\r\n\t\t\tsemiPitch = scale(semiPitch, -64, 0, -64*scale, 0);\r\n\t\t}\r\n\t\tclusterPitch = pow(2, semiPitch/12) - 1;\r\n\t\tpoke(buf_pitch, clusterPitch, his_thisIndex, 0);\r\n\t\t// set amp\r\n\t\tpoke(buf_amp, peek(buf_starlingA, readIndex, clusterIndex), his_thisIndex, 0);\r\n\t\t// set random length\r\n\t\tlenMin = clip(scale(semiPitch, 0, 24, 0.09, 0.05), 0.1, 0.05);\r\n\t\tpoke(buf_len,  samplerate*lenMin, his_thisIndex, 0);\r\n\t\t// set delay\r\n\t\tdelayMin = maximum(0.24*semiPitch/24, 0);\r\n\t\tpoke(buf_delay, (samplerate/2)*(delayMin+delayLen*abs(noise())), his_thisIndex, 0);\r\n\t\t// set windowFunc wavetable\r\n\t\tpoke(buf_mof, ceil(clip(scale(clusterPitch, -24, 24, 127, 0), 0, 127)), his_thisIndex, 0);\r\n\t\t// set channel and spread\r\n\t\tspNoise = noise()*spread;\r\n\t\tpoke(buf_spread, 0.5 + spNoise, his_thisIndex, 0);\r\n\t\tpoke(buf_spread, 0.5 - spNoise, his_thisIndex, 1);\r\n\t\t\r\n\t\this_thisIndex = wrap(his_thisIndex + 1 , 0, poly);\r\n\t}\r\n}\r\n\r\n// dsp section\r\noutput_1 = 0;\r\noutput_2 = 0;\r\nfor(i = 0; i < poly; i += 1){\r\n\tif(peek(buf_cout, i, 0) != 0){\r\n\t\t\r\n\t\tpCout = mCout - peek(buf_cout, i, 0);\r\n\t\tphase = winSize*pCout/peek(buf_len, i, 0);\r\n\t\t\r\n\r\n\t\tif(phase >= winSize){\r\n\t\t\tpoke(buf_cout, 0, i, 0);\r\n\t\t\tcontinue;\r\n\t\t}\r\n\t\t\r\n\t\tpitchVal = peek(buf_pitch, i, 0);\r\n\t\tdelayIndex = peek(buf_delay, i, 0)-pCout*pitchVal;\r\n\t\tif(delayIndex < 0){\r\n\t\t\tdelayIndex = (-2-pitchVal)*delayIndex/pitchVal;\r\n\t\t}\r\n\t\t\r\n\t\t// select input LorR and spread section\r\n\t\tamp = peek(buf_amp, i, 0);\r\n\t\toutput = delaySig.read(delayIndex)*peek(buf_win, phase, peek(buf_mof, i, 0))*amp;\r\n\t\toutput_1 += peek(buf_spread, i, 0)*output;\r\n\t\toutput_2 += peek(buf_spread, i, 1)*output;\r\n\t}\r\n}\r\n\r\noutputSum = output_1 + output_2;\r\nresetJudge = (outputSum + input) > 0.0001;\r\ncheckReset = resetJudge ? 1 : checkReset * (resetJudge ? 1 : 0.99995);\r\n\r\ndelaySig.write(in1 + in2);\r\n\r\n//atn = pow(interval/10, 0.475)/3;\r\nout1 = mix(in1, output_1/5, masterDryWet)*masterGain;\r\nout2 = mix(in2, output_2/5, masterDryWet)*masterGain;",
 									"fontface" : 0,
 									"fontname" : "Menlo",
 									"fontsize" : 12.0,
@@ -880,7 +892,7 @@
 						"editing_bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 376.13330078125, 555.699951171875, 157.133346557617188, 31.0 ],
+					"patching_rect" : [ 376.13330078125, 633.699951171875, 157.133346557617188, 31.0 ],
 					"text" : "gen~"
 				}
 
@@ -893,7 +905,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 665.83331298828125, 377.9169921875, 51.0, 20.0 ],
+					"patching_rect" : [ 665.83331298828125, 448.9169921875, 51.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -907,9 +919,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.83331298828125, 420.250244140625, 775.0, 31.0 ],
+					"patching_rect" : [ 665.83331298828125, 511.250244140625, 775.0, 31.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "starling_storeBuffer",
+						"filename" : "starling_storeBuffer.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -924,8 +936,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.83331298828125, 462.015869140625, 264.0, 22.0 ],
-					"text" : "sampleSize $1, dictSize $2, clusterNum $3"
+					"patching_rect" : [ 665.83331298828125, 557.015869140625, 260.0, 22.0 ],
+					"text" : "duration_ms $1, interval_ms $2, clusterNum $3"
 				}
 
 			}
@@ -940,7 +952,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
-					"midpoints" : [ 744.883292643229197, 260.94171142578125, 385.63330078125, 260.94171142578125 ],
+					"midpoints" : [ 767.883292643229197, 260.94171142578125, 385.63330078125, 260.94171142578125 ],
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -955,7 +967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
-					"midpoints" : [ 1015.205786132812591, 275.40283203125, 385.63330078125, 275.40283203125 ],
+					"midpoints" : [ 1084.205786132812591, 275.40283203125, 385.63330078125, 275.40283203125 ],
 					"source" : [ "obj-107", 0 ]
 				}
 
@@ -1007,7 +1019,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
-					"midpoints" : [ 675.33331298828125, 504.758776843547821, 385.63330078125, 504.758776843547821 ],
+					"midpoints" : [ 675.33331298828125, 608.758776843547821, 385.63330078125, 608.758776843547821 ],
 					"source" : [ "obj-117", 0 ]
 				}
 
@@ -1037,7 +1049,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 1101.583251953125, 323.894378662109375, 675.5, 323.894378662109375 ],
+					"midpoints" : [ 1170.583251953125, 323.894378662109375, 663.5, 323.894378662109375 ],
 					"source" : [ "obj-129", 0 ]
 				}
 
@@ -1052,7 +1064,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 961.833251953125, 323.894378662109375, 675.5, 323.894378662109375 ],
+					"midpoints" : [ 1007.833251953125, 323.894378662109375, 663.5, 323.894378662109375 ],
 					"source" : [ "obj-130", 0 ]
 				}
 
@@ -1060,7 +1072,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 803.383231608072947, 323.894378662109375, 675.5, 323.894378662109375 ],
+					"midpoints" : [ 819.383231608072947, 323.894378662109375, 663.5, 323.894378662109375 ],
 					"source" : [ "obj-133", 0 ]
 				}
 
@@ -1082,7 +1094,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-130", 0 ],
-					"midpoints" : [ 879.933272298177144, 173.6444091796875, 961.833251953125, 173.6444091796875 ],
+					"midpoints" : [ 925.933272298177144, 171.6444091796875, 1007.833251953125, 171.6444091796875 ],
 					"order" : 0,
 					"source" : [ "obj-185", 0 ]
 				}
@@ -1107,7 +1119,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
-					"midpoints" : [ 609.83331298828125, 169.6444091796875, 675.33331298828125, 169.6444091796875 ],
+					"midpoints" : [ 609.83331298828125, 169.6444091796875, 663.33331298828125, 169.6444091796875 ],
 					"order" : 0,
 					"source" : [ "obj-186", 0 ]
 				}
@@ -1117,6 +1129,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-188", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"midpoints" : [ 1242.033231608073038, 493.5098876953125, 675.33331298828125, 493.5098876953125 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1145,7 +1165,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-133", 0 ],
-					"midpoints" : [ 744.883292643229197, 172.6444091796875, 803.383231608072947, 172.6444091796875 ],
+					"midpoints" : [ 767.883292643229197, 169.6444091796875, 819.383231608072947, 169.6444091796875 ],
 					"order" : 0,
 					"source" : [ "obj-49", 0 ]
 				}
@@ -1161,8 +1181,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-188", 0 ],
-					"midpoints" : [ 1150.033231608073038, 409.1251220703125, 675.33331298828125, 409.1251220703125 ],
+					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1170,7 +1189,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
-					"midpoints" : [ 1014.983251953125091, 171.6444091796875, 1101.583251953125, 171.6444091796875 ],
+					"midpoints" : [ 1083.983251953125091, 171.6444091796875, 1170.583251953125, 171.6444091796875 ],
 					"order" : 0,
 					"source" : [ "obj-80", 0 ]
 				}
@@ -1208,7 +1227,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
-					"midpoints" : [ 879.933272298177144, 268.799951136112213, 385.63330078125, 268.799951136112213 ],
+					"midpoints" : [ 925.933272298177144, 268.799951136112213, 385.63330078125, 268.799951136112213 ],
 					"source" : [ "obj-92", 0 ]
 				}
 

@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 113.5, 337.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 145.0, 337.0, 42.0, 22.0 ],
+					"text" : "import"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
 					"index" : 1,
@@ -92,7 +116,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.299996197223663, 464.800000548362732, 180.999999344348907, 103.200000047683716 ]
+					"patching_rect" : [ 211.299996197223663, 464.800000548362732, 617.999999344348907, 568.200000047683716 ]
 				}
 
 			}
@@ -586,8 +610,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -763,6 +785,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 154.5, 385.300003349781036, 220.799996197223663, 385.300003349781036 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 1 ],
 					"source" : [ "obj-29", 1 ]
 				}
@@ -787,6 +817,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 123.0, 385.300003349781036, 220.799996197223663, 385.300003349781036 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
