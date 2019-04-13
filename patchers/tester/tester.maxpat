@@ -39,6 +39,47 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 248.349997818470001, 1028.0, 72.0, 20.0 ],
+					"text" : "PWT export"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 204.349997818470001, 1027.0, 42.0, 22.0 ],
+					"text" : "export"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 204.349997818470001, 1067.0, 50.5, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -128,7 +169,7 @@
 				"box" : 				{
 					"id" : "obj-92",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.099998474121094, 1160.599999368190765, 238.0, 22.0 ],
@@ -897,6 +938,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -967,6 +1017,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-78", 0 ]
 				}
@@ -1025,23 +1082,23 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-92.4::obj-10" : [ "flonum[18]", "flonum", 0 ],
 			"obj-92.1::obj-10" : [ "flonum[2]", "flonum", 0 ],
+			"obj-92.8::obj-10" : [ "flonum[22]", "flonum", 0 ],
+			"obj-92.13::obj-10" : [ "flonum[26]", "flonum", 0 ],
 			"obj-92.3::obj-10" : [ "flonum[17]", "flonum", 0 ],
-			"obj-92.6::obj-10" : [ "flonum[20]", "flonum", 0 ],
-			"obj-92.10::obj-10" : [ "flonum[10]", "flonum", 0 ],
-			"obj-92.9::obj-10" : [ "flonum[23]", "flonum", 0 ],
-			"obj-92.14::obj-10" : [ "flonum[27]", "flonum", 0 ],
-			"obj-92.5::obj-10" : [ "flonum[19]", "flonum", 0 ],
-			"obj-92.15::obj-10" : [ "flonum[15]", "flonum", 0 ],
-			"obj-92.2::obj-10" : [ "flonum[28]", "flonum", 0 ],
+			"obj-92.7::obj-10" : [ "flonum[21]", "flonum", 0 ],
 			"obj-18" : [ "live.text[5]", "live.text", 0 ],
 			"obj-92.12::obj-10" : [ "flonum[25]", "flonum", 0 ],
-			"obj-84" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-92.13::obj-10" : [ "flonum[26]", "flonum", 0 ],
-			"obj-92.4::obj-10" : [ "flonum[18]", "flonum", 0 ],
+			"obj-92.2::obj-10" : [ "flonum[28]", "flonum", 0 ],
+			"obj-92.6::obj-10" : [ "flonum[20]", "flonum", 0 ],
 			"obj-92.11::obj-10" : [ "flonum[24]", "flonum", 0 ],
-			"obj-92.7::obj-10" : [ "flonum[21]", "flonum", 0 ],
-			"obj-92.8::obj-10" : [ "flonum[22]", "flonum", 0 ],
+			"obj-92.10::obj-10" : [ "flonum[10]", "flonum", 0 ],
+			"obj-92.15::obj-10" : [ "flonum[15]", "flonum", 0 ],
+			"obj-92.5::obj-10" : [ "flonum[19]", "flonum", 0 ],
+			"obj-84" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-92.9::obj-10" : [ "flonum[23]", "flonum", 0 ],
+			"obj-92.14::obj-10" : [ "flonum[27]", "flonum", 0 ],
 			"parameterbanks" : 			{
 
 			}
