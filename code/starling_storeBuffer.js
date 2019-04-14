@@ -40,9 +40,9 @@ function convert(){
     var pitch = dict_starling.get("pwt::pitch");
     var magnitude = dict_starling.get("pwt::magnitude");
     var duration_ms = dict_starling.get("pwt::duration");
+    var chNum = dict_starling.get("pwt::numberOfVoices");
     
     // set buffer size
-    var chNum = pitch.getkeys().length;    
     var starlingLen = pitch.get("0").length
     buf_starling_p.send("sizeinsamps", starlingLen);
     buf_starling_a.send("sizeinsamps", starlingLen);
@@ -59,6 +59,8 @@ function convert(){
             buf_starling_a.poke(i+1, j, magnitudeVal);
         }
     }
+
+    buf_starling_a.send("normalize", 1);
 }
 
 function set_samplerate(val){
