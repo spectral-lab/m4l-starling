@@ -37,10 +37,10 @@ function bang(){
 
 function convert(){
 
-    var pitch = dict_starling.get("pwt::pitch");
-    var magnitude = dict_starling.get("pwt::magnitude");
-    var duration_ms = dict_starling.get("pwt::duration");
-    var chNum = dict_starling.get("pwt::numberOfVoices");
+    var pitch = dict_starling.get("pitch");
+    var magnitude = dict_starling.get("magnitude");
+    var duration_ms = dict_starling.get("duration");
+    var chNum = dict_starling.get("numberOfVoices");
     
     // set buffer size
     var starlingLen = pitch.get("0").length
