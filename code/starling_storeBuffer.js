@@ -4,7 +4,7 @@ var buf_win = new Buffer(jsarguments[1]);
 var buf_starling_p = new Buffer(jsarguments[2]);
 var buf_starling_a = new Buffer(jsarguments[3]);
 
-var dict_starling = new Dict(jsarguments[4]);
+var dict_starling = new Dict(jsarguments[5]);
 var samplerate = 48000;
 var interval = samplerate / 96; // 96 per escond
 
@@ -37,10 +37,10 @@ function bang(){
 
 function convert(){
 
-    var pitch = dict_starling.get("pitch");
-    var magnitude = dict_starling.get("magnitude");
-    var duration_ms = dict_starling.get("duration");
-    var chNum = dict_starling.get("numberOfVoices");
+    var pitch = dict_starling.get("pwt::pitch");
+    var magnitude = dict_starling.get("pwt::magnitude");
+    var duration_ms = dict_starling.get("pwt::duration");
+    var chNum = dict_starling.get("pwt::numberOfVoices");
     
     // set buffer size
     var starlingLen = pitch.get("0").length

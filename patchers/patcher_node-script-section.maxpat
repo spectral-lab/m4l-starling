@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1391.0, 1052.0 ],
+		"rect" : [ 709.0, 106.0, 1391.0, 1052.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -153,14 +153,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 211.299996197223663, 394.600006699562073, 65.0, 20.0 ],
+					"patching_rect" : [ 211.299996197223663, 394.600006699562073, 55.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict ---preset",
+					"text" : "dict preset",
 					"varname" : "dict[1]"
 				}
 
@@ -565,14 +565,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 414.5, 394.600006699562073, 69.0, 22.0 ],
+					"patching_rect" : [ 414.5, 394.600006699562073, 57.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict ---store",
+					"text" : "dict store",
 					"varname" : "dict"
 				}
 
@@ -610,6 +610,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
