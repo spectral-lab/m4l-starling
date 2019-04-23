@@ -44,8 +44,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.2900390625, 35.0, 49.0, 22.0 ],
-					"text" : "s ---edit"
+					"patching_rect" : [ 151.2900390625, 35.0, 65.0, 22.0 ],
+					"text" : "s ---editing"
 				}
 
 			}
@@ -1698,7 +1698,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 665.83331298828125, 580.250244140625, 887.0, 31.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "starling_storeBuffer.js",
+						"filename" : "starling_storeBuffer",
 						"parameter_enable" : 0
 					}
 ,
