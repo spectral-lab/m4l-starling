@@ -4,7 +4,7 @@ var buf_win = new Buffer(jsarguments[1]);
 var buf_starling_p = new Buffer(jsarguments[2]);
 var buf_starling_a = new Buffer(jsarguments[3]);
 
-var dict_starling = new Dict(jsarguments[4]);
+var dict_starling = new Dict(jsarguments[5]);
 var samplerate = 48000;
 var interval = samplerate / 96; // 96 per escond
 
