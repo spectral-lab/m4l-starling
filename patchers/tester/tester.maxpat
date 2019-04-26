@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1175.0, 788.0 ],
+		"rect" : [ 77.0, 78.0, 1175.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -202,12 +202,12 @@
 					"patching_rect" : [ 89.099998474121094, 1513.599999368190765, 185.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -551,14 +551,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 89.099998474121094, 545.600006103515625, 119.0, 22.0 ],
+					"patching_rect" : [ 89.099998474121094, 545.600006103515625, 131.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict store @embed 1",
+					"text" : "dict ---store @embed 1",
 					"varname" : "dict"
 				}
 
@@ -768,11 +768,11 @@
 					"presentation_rect" : [ 29.099998474121094, 52.099998474121094, 126.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text[5]",
+							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.text[5]",
-							"parameter_mmax" : 1
+							"parameter_type" : 2
 						}
 
 					}
@@ -794,6 +794,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1044,23 +1046,23 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-92.3::obj-10" : [ "flonum[4]", "flonum", 0 ],
 			"obj-92.8::obj-10" : [ "flonum[9]", "flonum", 0 ],
-			"obj-18" : [ "live.text[5]", "live.text", 0 ],
 			"obj-92.13::obj-10" : [ "flonum[14]", "flonum", 0 ],
-			"obj-92.1::obj-10" : [ "flonum[2]", "flonum", 0 ],
 			"obj-92.6::obj-10" : [ "flonum[7]", "flonum", 0 ],
 			"obj-92.11::obj-10" : [ "flonum[12]", "flonum", 0 ],
+			"obj-92.1::obj-10" : [ "flonum[2]", "flonum", 0 ],
 			"obj-84" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-92.4::obj-10" : [ "flonum[5]", "flonum", 0 ],
 			"obj-92.9::obj-10" : [ "flonum[10]", "flonum", 0 ],
 			"obj-92.14::obj-10" : [ "flonum[15]", "flonum", 0 ],
+			"obj-18" : [ "live.text[5]", "live.text", 0 ],
 			"obj-92.2::obj-10" : [ "flonum[3]", "flonum", 0 ],
 			"obj-92.7::obj-10" : [ "flonum[8]", "flonum", 0 ],
 			"obj-92.12::obj-10" : [ "flonum[13]", "flonum", 0 ],
 			"obj-92.5::obj-10" : [ "flonum[6]", "flonum", 0 ],
 			"obj-92.10::obj-10" : [ "flonum[11]", "flonum", 0 ],
 			"obj-92.15::obj-10" : [ "flonum[16]", "flonum", 0 ],
-			"obj-92.3::obj-10" : [ "flonum[4]", "flonum", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1069,8 +1071,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "main.js",
-				"bootpath" : "~/Documents/Max 7/Library/patch/m4l-starling-master/node_content",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Library/patch/m4l-starling-master/node_content",
+				"bootpath" : "~/repos/starling/m4l-starling/node_content",
+				"patcherrelativepath" : "../../node_content",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -1094,7 +1096,7 @@
 			}
 , 			{
 				"name" : "synth-module.maxpat",
-				"bootpath" : "~/Desktop/m4l-starling/patchers/tester",
+				"bootpath" : "~/repos/starling/m4l-starling/patchers/tester",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
